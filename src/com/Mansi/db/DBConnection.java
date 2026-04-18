@@ -1,6 +1,6 @@
 package com.Mansi.db;
 
-import java.sql.Connection;  // ✅ THIS is the correct import!
+import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
@@ -10,7 +10,6 @@ public class DBConnection {
         Connection con = null;
         
         try {
-            // No need to load driver manually for MySQL 8+
             String url = "jdbc:mysql://localhost:3306/students?useSSL=false&allowPublicKeyRetrieval=true";
             String username = "root";
             String password = "mysql123";
